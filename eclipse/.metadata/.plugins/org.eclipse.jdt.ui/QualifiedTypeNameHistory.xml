@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="mods.immibis.core.Config"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="mods.immibis.chunkloader.FileWorker"/>
+<fullyQualifiedTypeName name="org.joda.time.DateTime"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="mods.immibis.chunkloader.DimensionalAnchors"/>
+<fullyQualifiedTypeName name="mods.immibis.chunkloader.data.WorldLoaderList"/>
+<fullyQualifiedTypeName name="mods.immibis.chunkloader.data.Loader"/>
+</qualifiedTypeNameHistroy>

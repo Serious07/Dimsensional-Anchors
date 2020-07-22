@@ -1,0 +1,57 @@
+package mods.immibis.chunkloader;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+import org.joda.time.DateTime;
+
+public class FileWorker {
+	private static String dataPath = "DimensionalAnchors/";
+	
+	public static void SaveCurrentTime(String playerId){
+		
+	}
+	
+	public static DateTime LoadLastTime(String playerId){
+		return DateTime.now();
+	}
+	
+	public void WriteFile(String playerId, String content){
+		    String str = "Hello";
+		    BufferedWriter writer;
+			try {
+				writer = new BufferedWriter(new FileWriter(dataPath + playerId + ".txt"));
+				writer.write(content);
+			    
+			    writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    
+	}
+	
+	public String ReadFile(String playerId){
+		String result = "error";
+		
+		try {
+	      File myObj = new File("filename.txt");
+	      Scanner myReader = new Scanner(myObj);
+	      
+	      String data = "";
+	      
+	      while (myReader.hasNextLine()) {
+	        data += myReader.nextLine();
+	        System.out.println(data);
+	      }
+	      myReader.close();
+	    } catch (FileNotFoundException e) {
+	      System.out.println("An error occurred.");
+	      e.printStackTrace();
+	    }
+	}
+}

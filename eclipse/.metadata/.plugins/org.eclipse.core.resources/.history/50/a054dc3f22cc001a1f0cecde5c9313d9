@@ -1,0 +1,38 @@
+package mods.immibis.chunkloader;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.joda.time.DateTime;
+
+public class FileWorker {
+	private static String dataPath = "DimensionalAnchors/";
+	
+	public static void SaveTime(String playerId){
+		
+	}
+	
+	public static DateTime LoadLastTime(String playerId){
+		return DateTime.now();
+	}
+	
+	public void WriteFile(String playerId, String content){
+		    String str = "Hello";
+		    BufferedWriter writer;
+			try {
+				writer = new BufferedWriter(new FileWriter(playerId));
+				writer.write(content);
+			    
+			    writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    
+	}
+	
+	public String ReadFile(String playerId){
+		
+	}
+}

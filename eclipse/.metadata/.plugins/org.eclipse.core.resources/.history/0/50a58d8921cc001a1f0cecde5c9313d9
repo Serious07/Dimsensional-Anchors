@@ -1,0 +1,15 @@
+package mods.immibis.chunkloader;
+
+import org.joda.time.DateTime;
+
+public class FileWorker {
+	private static String dataPath = "DimensionalAnchors/";
+	
+	public static void SaveTime(String playerId){
+		
+	}
+	
+	public static DateTime LoadLastTime(String playerId){
+		
+	}
+}
